@@ -6,11 +6,26 @@
   width: 800px;
   height: 800px;
   margin: 100px auto;
+  z-index: 5;
 }
 
 .inner {
   background: #7A7A7A;
   width: 100px;
   height: 100px;
+  z-index: 10;
 }
 
+.inner2 {
+  background: #A1A1A1;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}
+
+.queen {
+  background-image: url("img/crown.png");
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+}

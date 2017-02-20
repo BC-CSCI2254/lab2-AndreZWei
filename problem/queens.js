@@ -86,7 +86,20 @@ function view(model) {
   let main = document.createElement('div');
   main.className = "main";
   main.style.backgroundImage = "url('https://unsplash.it/800/?image=1074')";
-  return main;
+  for (i = 0; i < 8; i++){
+    for (j = 0; j < 8; j++){
+      let inner = document.createElement('div');
+      if (model.board[i][j] == Queen){
+        inner.className = "queen";
+      } else if ((i + j) % 2 == 0){
+        inner.className = "inner";
+      } else{
+        inner.className = "inner2";
+      }
+      main.appendChild(inner);
+    }
+  }
+    return main;
 }
 
 function p2s(position) {
